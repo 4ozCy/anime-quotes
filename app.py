@@ -15,4 +15,4 @@ def get_random_quote():
     return jsonify(random.choice(quotes))
 
 if __name__ == '__main__':
-    app.run(debug=True, port=8000)
+    app.run(port=8000)
