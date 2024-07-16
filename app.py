@@ -53,7 +53,7 @@ anime_quotes = [
     {"quote": "Whatever you lose, you'll find it again. But what you throw away you'll never get back.", "character": "Kenshin Himura",
 ]
 
-@app.route('anime/quote', methods=['GET'])
+@app.route('/anime/quote', methods=['GET'])
 def get_random_anime_quote():
     return jsonify(random.choice(anime_quotes))
 
